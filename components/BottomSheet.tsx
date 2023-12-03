@@ -44,7 +44,7 @@ const BottomSheet = forwardRef<BottomSheetModal>((props, ref) => {
         </View>
 
         <Text style={styles.subheader}>지역 설정</Text>
-        <Link href={"/"} asChild>
+        <Link href={"/(modal)/location-search"} asChild>
           <TouchableOpacity>
             <View style={styles.item}>
               <Ionicons

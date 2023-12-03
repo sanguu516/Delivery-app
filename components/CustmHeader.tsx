@@ -6,6 +6,8 @@ import {
   TouchableOpacity,
   TextInput,
   Image,
+  StatusBar,
+  Platform,
 } from "react-native";
 import React, { useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
@@ -77,6 +79,7 @@ const CustomHeader = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     backgroundColor: "#fff",
   },
   container: {
